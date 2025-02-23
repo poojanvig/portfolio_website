@@ -1,0 +1,152 @@
+/* Reset / Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+  padding: 1rem;
+  justify-content: space-between; /* Space out text & image horizontally */
+  max-width: 700px;           /* Optional max width */
+  margin: 0 auto;       /* Vertically center them */
+
+
+}
+
+/* Hero Section Layout */
+.hero-section {
+  padding-top: 100px;
+  display: flex;               /* Place image and text side by side */
+  align-items: center;         /* Vertically center them */
+  justify-content: space-between; /* Space out text & image horizontally */
+  margin: 0 auto;              /* Center the hero on the page */
+  /*padding: 1rem 1rem;          !* Some spacing *!*/
+}
+
+/* Left side content */
+.hero-content {
+  flex: 1;                     /* Let the text side grow/shrink as needed */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.wave {
+  display: inline-block; /* Just to make sure the emoji aligns well */
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Right side image */
+.hero-image img {
+  width: 220px;        /* Adjust as you like */
+  height: 220px;       /* Same as width to keep it circular */
+  border-radius: 50%;  /* Circle crop */
+  object-fit: cover;   /* Crop the image nicely */
+}
+
+/** About Section *!*/
+.about-section {
+  margin: 0 auto;
+  padding-top: 1px; /* Spacing around the About section */
+  line-height: 1.5;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: left;  /* or center, if you prefer */
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* The Floating Footer */
+.floating-footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;  /* Large radius for a pill-like shape */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Make sure it appears above other elements */
+  z-index: 999;
+
+  transition: background-color 0.3s;
+}
+
+/* Dark-mode styling for the footer (optional) */
+body.dark-mode .floating-footer {
+  background: #333;
+}
+
+/* Footer UL: horizontal list of icons */
+.floating-footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* Footer LI style */
+.floating-footer li {
+  margin: 0 0.5rem;
+}
+
+/* Divider: vertical line */
+.floating-footer .divider {
+  width: 1px;
+  height: 24px;
+  background-color: #ddd;
+}
+
+body.dark-mode .floating-footer .divider {
+  background-color: #555;
+}
+
+/* Links & Buttons in footer */
+.floating-footer a,
+.floating-footer button {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+body.dark-mode .floating-footer a,
+body.dark-mode .floating-footer button {
+  color: #fff;
+}
+
+/* Hover effect for icons */
+.floating-footer a:hover,
+.floating-footer button:hover {
+  opacity: 0.7;
+}
+
+/* Remove focus outline on buttons/links for aesthetics,
+   but consider keeping a focus style for accessibility. */
+.floating-footer a:focus,
+.floating-footer button:focus {
+  outline: 2px solid #aaa; /* Or remove if you prefer */
+}
