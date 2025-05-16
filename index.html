@@ -1,95 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Personal Website</title>
-  <link rel="stylesheet" href="styles.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!-- You can add Google Fonts if you like -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poojan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero-section">
-    <div class="hero-content">
-      <h1>Hi, I'm Poojan <span class="wave">👋</span></h1>
-      <p class="hero-subtitle">
-        Final year engineering student specializing in AI and Data Science
-        with a robust foundation in Blockchain.
-      </p>
-    </div>
 
-    <div class="hero-image">
-      <!-- Replace this src with your own hosted image or local file path -->
-      <img
-        src="profile.jpeg"
-        alt="Poojan"
-      />
-    </div>
-  </header>
-  <section class="about-section">
-    <h2>About</h2>
-    <p>
-      I am a passionate final-year engineering student with a focus on AI, Data Science,
-      and a robust foundation in Blockchain. My interests include exploring cutting-edge
-      machine learning techniques, building innovative products, and fostering
-      tech-driven solutions to real-world challenges.
-    </p>
-  </section>
+    <!-- Main content -->
+    <main class="container">
+        <!-- Bottom Navigation -->
+<nav class="social-links">
+    <!-- scroll to top -->
+    <button class="social-button" data-scroll="top" aria-label="Home">
+        <i class="fas fa-home"></i>
+    </button>
+  
+    <!-- external profile links -->
+    <button class="social-button" data-open="https://github.com/yourUserName"
+            aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </button>
+    <button class="social-button" data-open="https://www.linkedin.com/in/poojan-vig/"
+            aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </button>
+    <button class="social-button" data-open="https://twitter.com/yourUserName"
+            aria-label="Twitter/X">
+        <i class="fab fa-twitter"></i>
+    </button>
+  
+    <!-- theme toggle -->
+    <button class="social-button" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+  </nav>
+  
+        <!-- Header section -->
+        <div class="profile-header">
+            <div class="profile-info">
+                <h1>Hi, I'm Poojan <span class="wave">👋</span></h1>
+                <p>Final year engineering student specializing in AI and Data Science with a robust foundation in Blockchain.</p>
+            </div>
+            <div class="profile-image">
+                <img src="assets/profile.jpeg" alt="Profile picture">
+            </div>
+        </div>
 
+        <!-- About section -->
+        <section class="about-section">
+            <h2>About</h2>
+            <p>A passionate final engineering student specializing in AI and Data Science with a robust foundation in Blockchain. Aspiring to leverage expertise in Machine Learning and Deep Learning to solve complex problems and drive innovation in the tech industry.</p>
+        </section>
 
-<footer class="floating-footer">
-    <ul>
-      <!-- Home Icon -->
-      <li>
-        <a href="#home" aria-label="Home">
-          <i class="fas fa-home"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/yourProfile" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/yourProfile" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
+        <!-- Work Experience section -->
+        <section class="experience-section">
+            <h2>Work Experience</h2>
 
-      <!-- X (Twitter) Icon -->
-      <li>
-        <a href="https://x.com/yourProfile" target="_blank" aria-label="X/Twitter">
-          <i class="fab fa-twitter"></i>
-          <!-- or 'fa-x-twitter' from certain icon sets, or a custom SVG -->
-        </a>
-      </li>
+            <!-- Experience Item 1 -->
+            <div class="experience-item highlight">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">SAKEC</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Technical Secretary</h3>
+                                <span class="role-badge">Leadership Role</span>
+                            </div>
+                            <p class="company-name">SAKEC • Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="experience-date">2022 - 2023</div>
+                </div>
+                <p class="experience-description">Led technical initiatives across the university, organized tech events, and fostered innovation among students.</p>
+            </div>
 
-      <!-- Divider -->
-      <li class="divider"></li>
+            <!-- Experience Item 2 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">CELL</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Entrepreneurship Cell Head</h3>
+                                <span class="role-badge">Leadership Role</span>
+                            </div>
+                            <p class="company-name">SAKEC • Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="experience-date">2022 - 2023</div>
+                </div>
+                <p class="experience-description">Spearheaded entrepreneurship programs, mentored student startups, and organized workshops to promote business acumen.</p>
+            </div>
 
-      <!-- Theme Toggle Icon -->
-      <li>
-        <button class="theme-toggle" aria-label="Toggle Light/Dark Mode">
-          <i class="fas fa-sun"></i>
-        </button>
-      </li>
-    </ul>
-  </footer>
+            <!-- Experience Item 3 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">CF</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Data Science Intern</h3>
+                            </div>
+                            <p class="company-name">Creative Finserve Pvt. Ltd. • Mumbai, India</p>
+                        </div>
+                    </div>
+                    <div class="experience-date">Dec 2022 - Present</div>
+                </div>
+                <p class="experience-description">Utilizing deep learning techniques to extract insights from complex data sets and drive decision-making. Engaging in Data Analysis and Machine Learning, expanding skill set in additional areas.</p>
+            </div>
 
-  <!-- Example JavaScript to toggle dark mode (optional) -->
-  <script>
-    const themeToggleBtn = document.querySelector('.theme-toggle');
-    themeToggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      // Switch icon from sun to moon or vice versa, if desired
-    });
-  </script>
+            <!-- Experience Item 4 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">intel</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Artificial Intelligence Intern</h3>
+                            </div>
+                            <p class="company-name">Intel Corporation • Remote</p>
+                        </div>
+                    </div>
+                    <div class="experience-date">Jun 2023 - Oct 2023</div>
+                </div>
+                <p class="experience-description">Worked on various projects spanning Computer Vision to Natural Language Processing, contributing to cutting-edge technologies.</p>
+            </div>
+        </section>
+
+        <!-- Add spacing between sections -->
+        <div style="margin-bottom: 48px;"></div>
+
+        <section id="education" class="education-section">
+            <h2>Education</h2>
+            <div style="margin-bottom: 17px;"></div>
+
+            <!-- Education Item 1 -->
+            <div class="experience-item highlight">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">SAKEC</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Bachelor of Engineering</h3>
+                                <span class="role-badge">Computer Science</span>
+                            </div>
+                            <p class="company-name">Shah & Anchor Kutchhi Engineering College • Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="experience-date">2020 - 2024</div>
+                </div>
+                <p class="experience-description">Specializing in Artificial Intelligence and Data Science with a focus on Machine Learning and Deep Learning. CGPA: 9.2/10</p>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">HSC</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Higher Secondary Education</h3>
+                                <span class="role-badge">Science</span>
+                            </div>
+                            <p class="company-name">Mumbai Junior College • Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="experience-date">2018 - 2020</div>
+                </div>
+                <p class="experience-description">Completed HSC with distinction in Physics, Chemistry, and Mathematics. Percentage: 85%</p>
+            </div>
+
+            <!-- Education Item 3 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">SSC</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Secondary School Certificate</h3>
+                            </div>
+                            <p class="company-name">Mumbai High School • Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="experience-date">2018</div>
+                </div>
+                <p class="experience-description">Graduated with distinction and received recognition for excellence in Mathematics and Science. Percentage: 92%</p>
+            </div>
+        </section>
+        <!-- ─── Skills ─────────────────────────────────────────────── -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            
+            <div class="skills-category">
+                <h3>Programming & Languages</h3>
+                <div class="skills-list">
+                    <span class="skill-tag" data-level="advanced"><i class="fab fa-python"></i>Python</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-js"></i>JavaScript</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-database"></i>SQL</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-java"></i>Java</span>
+                    <span class="skill-tag" data-level="beginner"><i class="fab fa-rust"></i>Rust</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>AI & Data Science</h3>
+                <div class="skills-list">
+                    <span class="skill-tag" data-level="advanced"><i class="fas fa-brain"></i>Machine Learning</span>
+                    <span class="skill-tag" data-level="advanced"><i class="fas fa-network-wired"></i>Deep Learning</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-eye"></i>Computer Vision</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-comment-alt"></i>NLP</span>
+                    <span class="skill-tag" data-level="advanced"><i class="fas fa-fire"></i>PyTorch</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-chart-bar"></i>Data Analysis</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Web Development</h3>
+                <div class="skills-list">
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-react"></i>React</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-react"></i>React Native</span>
+                    <span class="skill-tag" data-level="advanced"><i class="fab fa-python"></i>Django</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-html5"></i>HTML/CSS</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>DevOps & Cloud</h3>
+                <div class="skills-list">
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-aws"></i>AWS</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-microsoft"></i>Azure</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-docker"></i>Docker</span>
+                    <span class="skill-tag" data-level="beginner"><i class="fab fa-digital-ocean"></i>Digital Ocean</span>
+                    <span class="skill-tag" data-level="advanced"><i class="fab fa-git-alt"></i>Git</span>
+                </div>
+            </div>
+        </section>
+  
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
