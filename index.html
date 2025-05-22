@@ -33,7 +33,7 @@
     </button>
   
     <!-- theme toggle -->
-    <button class="social-button" id="theme-toggle">
+    <button class="social-button" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
         <i class="fas fa-moon"></i>
     </button>
     
@@ -42,8 +42,8 @@
         <!-- Header section -->
         <div class="profile-header">
             <div class="profile-info">
-                <h1>Hi, I'm Poojan <span class="wave">👋</span></h1>
-                <p>Final year engineering student specializing in AI and Data Science with a robust foundation in Blockchain.</p>
+                <h1>Hi, I'm Naw <span class="wave">👋</span></h1>
+                <p>Software Engineer passionate about building scalable applications and exploring cutting-edge technologies.</p>
             </div>
             <div class="profile-image">
                 <img src="assets/profile.jpeg" alt="Profile picture">
@@ -53,24 +53,29 @@
         <!-- About section -->
         <section class="about-section">
             <h2>About</h2>
-            <p>A passionate final engineering student specializing in AI and Data Science with a robust foundation in Blockchain. Aspiring to leverage expertise in Machine Learning and Deep Learning to solve complex problems and drive innovation in the tech industry.</p>
+            <p>I'm a Software Engineer with a strong foundation in full-stack development and a deep interest in AI/ML technologies. With hands-on experience in building scalable applications and implementing machine learning solutions, I strive to create impactful software that solves real-world problems. Currently exploring opportunities where I can contribute to innovative projects and continue growing as a developer.</p>
         </section>
 
         <!-- Work Experience section -->
-        <section class="experience-section">
+        <section class="experience-section" id="experience">
             <h2>Work Experience</h2>
 
             <!-- Experience Item 1 -->
-            <div class="experience-item highlight">
+            <div class="experience-item">
                 <div class="experience-header">
                     <div class="experience-title">
-                        <div class="company-logo">SAKEC</div>
+                        <div class="company-logo">
+                            <img src="assets/aurum-logo.png" alt="AURUM Logo">
+                        </div>
                         <div class="title-details">
                             <div class="title-row">
                                 <h3>Technical Secretary</h3>
                                 <span class="role-badge">Leadership Role</span>
                             </div>
-                            <p class="company-name">SAKEC • Mumbai</p>
+                            <div class="company-info">
+                                <span class="company-name">SAKEC</span>
+                                <span>Mumbai</span>
+                            </div>
                         </div>
                     </div>
                     <div class="experience-date">2022 - 2023</div>
@@ -82,13 +87,18 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <div class="experience-title">
-                        <div class="company-logo">CELL</div>
+                        <div class="company-logo">
+                            <img src="assets/ecell-logo.png" alt="E-Cell Logo">
+                        </div>
                         <div class="title-details">
                             <div class="title-row">
                                 <h3>Entrepreneurship Cell Head</h3>
                                 <span class="role-badge">Leadership Role</span>
                             </div>
-                            <p class="company-name">SAKEC • Mumbai</p>
+                            <div class="company-info">
+                                <span class="company-name">SAKEC</span>
+                                <span>Mumbai</span>
+                            </div>
                         </div>
                     </div>
                     <div class="experience-date">2022 - 2023</div>
@@ -104,8 +114,12 @@
                         <div class="title-details">
                             <div class="title-row">
                                 <h3>Data Science Intern</h3>
+                                <span class="role-badge">Machine Learning</span>
                             </div>
-                            <p class="company-name">Creative Finserve Pvt. Ltd. • Mumbai, India</p>
+                            <div class="company-info">
+                                <span class="company-name">Creative Finserve Pvt. Ltd.</span>
+                                <span>Mumbai, India</span>
+                            </div>
                         </div>
                     </div>
                     <div class="experience-date">Dec 2022 - Present</div>
@@ -117,12 +131,16 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <div class="experience-title">
-                        <div class="company-logo">intel</div>
+                        <div class="company-logo">INTEL</div>
                         <div class="title-details">
                             <div class="title-row">
                                 <h3>Artificial Intelligence Intern</h3>
+                                <span class="role-badge">Deep Learning</span>
                             </div>
-                            <p class="company-name">Intel Corporation • Remote</p>
+                            <div class="company-info">
+                                <span class="company-name">Intel Corporation</span>
+                                <span>Remote</span>
+                            </div>
                         </div>
                     </div>
                     <div class="experience-date">Jun 2023 - Oct 2023</div>
@@ -134,21 +152,26 @@
         <!-- Add spacing between sections -->
         <div style="margin-bottom: 48px;"></div>
 
-        <section id="education" class="education-section">
+        <!-- Education section -->
+        <section class="experience-section" id="education">
             <h2>Education</h2>
-            <div style="margin-bottom: 17px;"></div>
 
             <!-- Education Item 1 -->
-            <div class="experience-item highlight">
+            <div class="experience-item">
                 <div class="experience-header">
                     <div class="experience-title">
-                        <div class="company-logo">SAKEC</div>
+                        <div class="company-logo">
+                            <img src="assets/sakec-logo.png" alt="SAKEC Logo">
+                        </div>
                         <div class="title-details">
                             <div class="title-row">
                                 <h3>Bachelor of Engineering</h3>
                                 <span class="role-badge">Computer Science</span>
                             </div>
-                            <p class="company-name">Shah & Anchor Kutchhi Engineering College • Mumbai</p>
+                            <div class="company-info">
+                                <span class="company-name">Shah & Anchor Kutchhi Engineering College</span>
+                                <span>Mumbai</span>
+                            </div>
                         </div>
                     </div>
                     <div class="experience-date">2020 - 2024</div>
@@ -166,7 +189,10 @@
                                 <h3>Higher Secondary Education</h3>
                                 <span class="role-badge">Science</span>
                             </div>
-                            <p class="company-name">Mumbai Junior College • Mumbai</p>
+                            <div class="company-info">
+                                <span class="company-name">Mumbai Junior College</span>
+                                <span>Mumbai</span>
+                            </div>
                         </div>
                     </div>
                     <div class="experience-date">2018 - 2020</div>
@@ -182,8 +208,12 @@
                         <div class="title-details">
                             <div class="title-row">
                                 <h3>Secondary School Certificate</h3>
+                                <span class="role-badge">Science</span>
                             </div>
-                            <p class="company-name">Mumbai High School • Mumbai</p>
+                            <div class="company-info">
+                                <span class="company-name">Mumbai High School</span>
+                                <span>Mumbai</span>
+                            </div>
                         </div>
                     </div>
                     <div class="experience-date">2018</div>
@@ -239,7 +269,128 @@
                 </div>
             </div>
         </section>
-  
+        <!-- ─── Publications ─────────────────────────────────────────────── -->
+        <section id="publications" class="publications-section-modern">
+            <div class="publications-badge">Publications</div>
+            <h2 class="publications-title">My Research Work</h2>
+            <p class="publications-desc">Here are some of my published works and research papers.</p>
+            <div class="publications-list">
+                <div class="publication-modern">
+                    <div class="publication-main">
+                        <div class="publication-title-modern">Helix: Autonomous AI Agent</div>
+                        <div class="publication-journal">International Journal for Research in Applied Science and Engineering Technology (IJRASET)</div>
+                        <a href="https://www.ijraset.com/best-journal/helix-autonomous-ai-agent" target="_blank" rel="noopener" class="publication-btn">View Publication</a>
+                    </div>
+                </div>
+                <div class="publication-modern">
+                    <div class="publication-main">
+                        <div class="publication-title-modern">Enhancing Urban Traffic Flow: A Simulation-Based Approach Using Dynamic Signal Timing</div>
+                        <div class="publication-journal">Journal of Emerging Technologies and Innovative Research (JETIR)</div>
+                        <a href="https://www.jetir.org/view?paper=JETIR2306345" target="_blank" rel="noopener" class="publication-btn">View Publication</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Honors & Awards (Timeline) ─────────────────────────────────────────────── -->
+        <section id="awards" class="awards-timeline-section">
+            <h2 class="section-title"><i class="fas fa-trophy"></i> Honors & Awards</h2>
+            <div class="awards-timeline">
+                <div class="award-step">
+                    <div class="award-step-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-step-content">
+                        <div class="award-step-title">Unscript 2K23 Winner - Hackaton</div>
+                        <div class="award-step-date">Feb 2023</div>
+                        <div class="award-step-meta">Fr. Conceicao Rodrigues College of Engineering</div>
+                        <div class="award-step-desc">1st Place AI ML Domain Hackathon at Fr. C. Rodrigues Institute of Technology. Committed to innovation & solving real-world problems.</div>
+                    </div>
+                </div>
+                <div class="award-step">
+                    <div class="award-step-icon"><i class="fas fa-award"></i></div>
+                    <div class="award-step-content">
+                        <div class="award-step-title">Syntechxathon 3.0 Winner - Hackaton</div>
+                        <div class="award-step-date">Jan 2023</div>
+                        <div class="award-step-meta">RD & SH National College</div>
+                        <div class="award-step-desc">1st Place at Syntechxathon 3.0 for Airrigate - a website for cutting-edge agriculture solutions. Offers crop recommendations, fertilizer suggestion, yield prediction, plant disease detection & support chatbot.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Organizations (Profile Card) ─────────────────────────────────────────────── -->
+        <section id="organizations" class="organizations-profile-section">
+            <h2 class="section-title"><i class="fas fa-users"></i> Organizations</h2>
+            <div class="organization-profile-card">
+                <div class="org-profile-sidebar"></div>
+                <div class="org-profile-main">
+                    <div class="org-profile-header">
+                        <div class="org-profile-logo"><i class="fas fa-university"></i></div>
+                        <div>
+                            <div class="org-profile-title">Sakec Student Council 2023-2024</div>
+                            <div class="org-profile-role">General Coordinator &middot; Jul 2023 - Jul 2024</div>
+                        </div>
+                    </div>
+                    <div class="org-profile-meta"><i class="fas fa-school"></i> Shah And Anchor Kutchhi Engineering College</div>
+                    <div class="org-profile-desc">As the elected Head of the Student Council, I led a diverse team to coordinate college events, manage student-led initiatives, and serve as a liaison between the student body and the administration. My tenure was marked by ...</div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Content Creation (Blog/Medium) ─────────────────────────────────────────────── -->
+        <section id="content-creation" class="content-creation-section">
+            <h2 class="section-title"><i class="fab fa-medium"></i> Content Creation</h2>
+            <p class="content-creation-intro">I regularly share insights, tutorials, and stories on Medium, helping others learn and grow in tech, AI, and software development. Here are a few of my featured posts:</p>
+            <div class="content-creation-list">
+                <div class="content-card">
+                    <img src="https://source.unsplash.com/400x220/?neural,network" alt="Neural Network Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">How to Build a Neural Network from Scratch</div>
+                    <div class="content-card-desc">A step-by-step guide to understanding and implementing neural networks using Python, with code and visualizations.</div>
+                    <a href="https://medium.com/@yourusername/how-to-build-a-neural-network-from-scratch-123456" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://source.unsplash.com/400x220/?blockchain,technology" alt="Blockchain Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Demystifying Blockchain: A Beginner's Guide</div>
+                    <div class="content-card-desc">Breaking down the core concepts of blockchain technology and its real-world applications in simple terms.</div>
+                    <a href="https://medium.com/@yourusername/demystifying-blockchain-beginners-guide-654321" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://source.unsplash.com/400x220/?productivity,developer" alt="Productivity Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Productivity Hacks for Developers</div>
+                    <div class="content-card-desc">My favorite tools, habits, and strategies to stay productive and focused as a software engineer.</div>
+                    <a href="https://medium.com/@yourusername/productivity-hacks-for-developers-abcdef" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://source.unsplash.com/400x220/?data,visualization" alt="Data Visualization Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Mastering Data Visualization in Python</div>
+                    <div class="content-card-desc">Tips and libraries for creating stunning, insightful data visualizations for your projects and presentations.</div>
+                    <a href="https://medium.com/@yourusername/mastering-data-visualization-python-789012" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://source.unsplash.com/400x220/?react,web" alt="React Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Getting Started with React for Beginners</div>
+                    <div class="content-card-desc">A hands-on introduction to building interactive web apps with React, including setup and best practices.</div>
+                    <a href="https://medium.com/@yourusername/getting-started-with-react-beginners-345678" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://source.unsplash.com/400x220/?ai,ethics" alt="AI Ethics Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">AI Ethics: What Every Developer Should Know</div>
+                    <div class="content-card-desc">An overview of ethical considerations in AI development, with real-world examples and actionable advice.</div>
+                    <a href="https://medium.com/@yourusername/ai-ethics-developer-guide-901234" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Contact Info ─────────────────────────────────────────────── -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+            <p class="contact-intro">Interested in collaborating, have a question, or just want to connect? Feel free to reach out!</p>
+            <div class="contact-info-list">
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+1234567890">+1 234 567 890</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>
