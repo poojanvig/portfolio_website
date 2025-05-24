@@ -27,7 +27,7 @@ if (themeBtn) {
   const savedTheme = localStorage.getItem('theme');
   
   // Apply saved theme or system preference
-  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+  if (savedTheme === 'dark') {
     document.body.classList.add('dark');
     themeBtn.querySelector('i').classList.replace('fa-moon', 'fa-sun');
   }
