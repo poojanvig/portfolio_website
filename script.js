@@ -48,3 +48,41 @@ if (themeBtn) {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 }
+
+/* ----------  DYNAMIC DATE CALCULATOR  ---------- */
+function calculateWorkDuration() {
+  const startDate = new Date('2024-06-01'); // June 2024
+  const currentDate = new Date();
+  
+  const years = currentDate.getFullYear() - startDate.getFullYear();
+  const months = currentDate.getMonth() - startDate.getMonth();
+  
+  let totalMonths = years * 12 + months;
+  
+  // Adjust if we haven't reached the day of the month yet
+  if (currentDate.getDate() < startDate.getDate()) {
+    totalMonths--;
+  }
+  
+  let durationText;
+  if (totalMonths >= 12) {
+    const displayYears = Math.floor(totalMonths / 12);
+    const displayMonths = totalMonths % 12;
+    
+    if (displayMonths === 0) {
+      durationText = `(${displayYears} ${displayYears === 1 ? 'year' : 'years'})`;
+    } else {
+      durationText = `(${displayYears} ${displayYears === 1 ? 'year' : 'years'}, ${displayMonths} ${displayMonths === 1 ? 'month' : 'months'})`;
+    }
+  } else {
+    durationText = `(${totalMonths} ${totalMonths === 1 ? 'month' : 'months'})`;
+  }
+  
+  const durationElement = document.getElementById('cyphersol-duration');
+  if (durationElement) {
+    durationElement.textContent = durationText;
+  }
+}
+
+// Calculate duration on page load
+document.addEventListener('DOMContentLoaded', calculateWorkDuration);
