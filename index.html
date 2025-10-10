@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poojan's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Main content -->
+    <main class="container">
+        <!-- Bottom Navigation -->
+<nav class="social-links">
+    <!-- scroll to top -->
+    <button class="social-button" data-scroll="top" aria-label="Home">
+        <i class="fas fa-home"></i>
+    </button>
+  
+    <!-- external profile links -->
+    <button class="social-button" data-open="https://github.com/poojanvig?tab=repositories"
+            aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </button>
+    <button class="social-button" data-open="https://www.linkedin.com/in/poojan-vig/"
+            aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </button>
+    <button class="social-button" data-open="https://x.com/VigPv"
+            aria-label="Twitter/X">
+        <i class="fab fa-twitter"></i>
+    </button>
+  
+    <!-- theme toggle -->
+    <button class="social-button" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+  </nav>
+  
+        <!-- Header section -->
+        <div class="profile-header">
+            <div class="profile-info">
+                <h1>Hi, I'm Poojan <span class="wave">👋</span></h1>
+                <p>AI and Data Science Enthusiast | Leveraging Advanced Analytics to Drive Business Solutions and Innovation.</p>
+            </div>
+            <div class="profile-image">
+                <img src="assets/profile.jpeg" alt="Profile picture">
+            </div>
+        </div>
+
+        <!-- About section -->
+        <section class="about-section">
+            <h2>About</h2>
+            <p>I'm a passionate AI Engineer and Data Science professional with expertise in developing intelligent systems that solve real-world challenges. With a Bachelor's degree in AI and Data Science from Mumbai University and hands-on experience in fintech, I specialize in building scalable machine learning solutions, predictive analytics, and data-driven applications that drive business innovation.</p>
+        </section>
+
+        <!-- Work Experience section -->
+        <section class="experience-section" id="experience">
+            <h2>Work Experience</h2>
+
+            <!-- Experience Item 1 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">
+                            <img src="assets/Untitled design.png" alt="AURUM Logo">
+                        </div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>CypherSOL Fintech India Pvt Ltd.</h3>
+                                <span class="role-badge">AI Engineer</span>
+                            </div>
+                            <div class="company-info">
+                                <span class="company-name">Fulltime</span>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-date">June 2024 - Present<br><small id="cyphersol-duration">(8 months)</small></div>
+                </div>
+                <p class="experience-description">Developing and implementing AI-driven solutions for fintech applications, focusing on machine learning models for financial data analysis, risk assessment, and automated decision-making systems to enhance business operations and customer experiences.</p>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">
+                            <img src="assets/cf.png" alt="E-Cell Logo">
+                        </div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Creative Finserve Pvt. Ltd.</h3>
+                                <span class="role-badge">Data Scientist</span>
+                            </div>
+                            <div class="company-info">
+                                <span class="company-name">Hybrid</span>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-date">Jan 2024 - May 2024<br><small>(5 months)</small></div>
+                </div>
+                <p class="experience-description">Developed and deployed machine learning models for credit scoring and fraud detection, resulting in 25% improvement in risk assessment accuracy. Built automated data pipelines and collaborated with cross-functional teams to deliver scalable analytics solutions that enhanced decision-making processes.</p>
+            </div>
+
+            <!-- Experience Item 3 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">
+                            <img src="assets/cf.png" alt="E-Cell Logo">
+                        </div>                        
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Creative Finserve Pvt. Ltd</h3>
+                                <span class="role-badge">Data Analyst</span>
+                            </div>
+                            <div class="company-info">
+                                <span class="company-name">Hybrid</span>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-date">Oct 2022 - Dec 2022<br><small>(3 months)</small></div>
+                </div>
+                <p class="experience-description">Designed comprehensive data collection frameworks that improved data quality by 30% and statistical efficiency. Analyzed large financial datasets to identify market trends and customer behavior patterns, delivering actionable insights through automated reporting dashboards that informed strategic business decisions.</p>
+            </div>
+
+            <!-- Experience Item 4 -->
+            <!-- <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">INTEL</div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Artificial Intelligence Intern</h3>
+                                <span class="role-badge">Deep Learning</span>
+                            </div>
+                            <div class="company-info">
+                                <span class="company-name">Intel Corporation</span>
+                                <span>Remote</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-date">Jun 2023 - Oct 2023</div>
+                </div>
+                <p class="experience-description">Worked on various projects spanning Computer Vision to Natural Language Processing, contributing to cutting-edge technologies.</p>
+            </div> -->
+        </section>
+
+        <!-- Add spacing between sections -->
+        <div style="margin-bottom: 48px;"></div>
+
+        <!-- Education section -->
+        <section class="experience-section" id="education">
+            <h2>Education</h2>
+
+            <!-- Education Item 1 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">
+                            <img src="assets/Blue_Logo-With SM.jpg" alt="SAKEC Logo">
+                        </div>
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Bachelor of Engineering</h3>
+                                <span class="role-badge">Artificial Intelligence and Data Science</span>
+                            </div>
+                            <div class="company-info">
+                                <span class="company-name">Shah & Anchor Kutchhi Engineering College</span>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-date">2020 - 2024</div>
+                </div>
+                <p class="experience-description">Comprehensive curriculum covering Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Data Analytics. Completed capstone projects in autonomous AI systems and traffic optimization. CGPA: 8.60/10.0</p>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <div class="company-logo">
+                            <img src="assets/Vivekanand-Education-Societys-College-of-Law-Chembur-Mumbai.webp" alt="SAKEC Logo">
+                        </div>                        
+                        <div class="title-details">
+                            <div class="title-row">
+                                <h3>Swami Vivekananda Junior College</h3>
+                                <span class="role-badge">Science</span>
+                            </div>
+                            <div class="company-info">
+                                <span class="company-name"></span>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-date">2018 - 2020</div>
+                </div>
+                <p class="experience-description">Higher Secondary Certificate with specialization in Physics, Chemistry, and Mathematics. Strong foundation in analytical thinking and problem-solving that laid the groundwork for engineering studies.</p>
+            </div>
+
+
+        </section>
+        <!-- ─── Skills ─────────────────────────────────────────────── -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            
+            <div class="skills-category">
+                <h3>Programming & Languages</h3>
+                <div class="skills-list">
+                    <span class="skill-tag" data-level="advanced"><i class="fab fa-python"></i>Python</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-database"></i>SQL</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-java"></i>Java</span>
+                    <span class="skill-tag" data-level="beginner"><i class="fab fa-rust"></i>Rust</span>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>AI & Machine Learning</h3>
+                <div class="skills-list">
+                    <span class="skill-tag" data-level="advanced"><i class="fas fa-brain"></i> TensorFlow</span>
+                    <span class="skill-tag" data-level="advanced"><i class="fas fa-fire"></i> PyTorch</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-chart-bar"></i> Machine Learning</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-project-diagram"></i> Deep Learning</span>
+                    <span class="skill-tag" data-level="advanced"><i class="fas fa-eye"></i> Computer Vision</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-comment-dots"></i> NLP</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fas fa-chart-line"></i> Data Analysis</span>
+
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>ML Deployment & MLOps</h3>
+                <div class="skills-list">
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-docker"></i>Docker</span>
+                    <span class="skill-tag" data-level="intermediate"><i class="fab fa-aws"></i>AWS & Azure</span>
+                    <span class="skill-tag" data-level="advanced"><i class="fab fa-git-alt"></i>Git</span>
+                    <span class="skill-tag" data-level="beginner"><i class="fab fa-digital-ocean"></i>Digital Ocean</span>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Publications ─────────────────────────────────────────────── -->
+        <section id="publications" class="publications-section-modern">
+            <div class="publications-badge">Publications</div>
+            <h2 class="publications-title">My Research Work</h2>
+            <p class="publications-desc">Here are some of my published works and research papers.</p>
+            <div class="publications-list">
+                <div class="publication-modern">
+                    <div class="publication-main">
+                        <div class="publication-title-modern">Helix: Autonomous AI Agent</div>
+                        <div class="publication-journal">International Journal for Research in Applied Science and Engineering Technology (IJRASET)</div>
+                        <a href="https://www.ijraset.com/best-journal/helix-autonomous-ai-agent" target="_blank" rel="noopener" class="publication-btn">View Publication</a>
+                    </div>
+                </div>
+                <div class="publication-modern">
+                    <div class="publication-main">
+                        <div class="publication-title-modern">Enhancing Urban Traffic Flow: A Simulation-Based Approach Using Dynamic Signal Timing</div>
+                        <div class="publication-journal">Journal of Emerging Technologies and Innovative Research (JETIR)</div>
+                        <a href="https://www.jetir.org/view?paper=JETIR2404988" target="_blank" rel="noopener" class="publication-btn">View Publication</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Honors & Awards (Timeline) ─────────────────────────────────────────────── -->
+        <section id="awards" class="awards-timeline-section">
+            <h2 class="section-title"><i class="fas fa-trophy"></i> Honors & Awards</h2>
+            <div class="awards-timeline">
+                <div class="award-step">
+                    <div class="award-step-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-step-content">
+                        <div class="award-step-title">Unscript 2K23 Winner - Hackathon</div>
+                        <div class="award-step-date">Feb 2023</div>
+                        <div class="award-step-meta">Fr. Conceicao Rodrigues College of Engineering</div>
+                        <div class="award-step-desc">First Place in AI/ML Domain at Fr. C. Rodrigues Institute of Technology hackathon. Developed an innovative solution demonstrating expertise in artificial intelligence and commitment to solving real-world problems through technology.</div>
+                    </div>
+                </div>
+                <div class="award-step">
+                    <div class="award-step-icon"><i class="fas fa-award"></i></div>
+                    <div class="award-step-content">
+                        <div class="award-step-title">Syntechxathon 3.0 Winner - Hackathon</div>
+                        <div class="award-step-date">Jan 2023</div>
+                        <div class="award-step-meta">RD & SH National College</div>
+                        <div class="award-step-desc">First Place winner for developing 'Airrigate' - a comprehensive agricultural technology platform featuring ML-powered crop recommendations, fertilizer optimization, yield prediction models, computer vision-based plant disease detection, and an intelligent support chatbot for farmers.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Organizations (Profile Card) ─────────────────────────────────────────────── -->
+        <section id="organizations" class="organizations-profile-section">
+            <h2 class="section-title"><i class="fas fa-users"></i> Organizations</h2>
+            <div class="organization-profile-card">
+                <div class="org-profile-sidebar"></div>
+                <div class="org-profile-main">
+                    <div class="org-profile-header">
+                        <div class="org-profile-logo"><i class="fas fa-university"></i></div>
+                        <div>
+                            <div class="org-profile-title">Sakec Student Council 2023-2024</div>
+                            <div class="org-profile-role">General Coordinator &middot; Jul 2023 - Jul 2024</div>
+                        </div>
+                    </div>
+                    <div class="org-profile-meta"><i class="fas fa-school"></i> Shah And Anchor Kutchhi Engineering College</div>
+                        <div class="org-profile-desc">As the elected Head of the Student Council, I led a diverse team to coordinate college events, manage student-led initiatives, and serve as a liaison between the student body and the administration. My tenure was marked by a series of successful events, including the largest-ever annual tech fest. I honed my leadership, organizational, and communication skills, while fostering an inclusive and dynamic campus community.</div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Content Creation (Blog/Medium) ─────────────────────────────────────────────── -->
+        <section id="content-creation" class="content-creation-section">
+            <h2 class="section-title"><i class="fab fa-medium"></i> Content Creation</h2>
+            <p class="content-creation-intro">I regularly publish technical articles and insights on Medium, sharing knowledge about AI, machine learning, and emerging technologies with the developer community. Here are some of my featured publications:</p>
+            <div class="content-creation-list">
+                <div class="content-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*N1bLW760BBo0bL3GvLgDOw.png" alt="Neural Network Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">5 Common Myths About AI — And the Truth Behind Them</div>
+                    <div class="content-card-desc">Debunking common misconceptions about artificial intelligence and exploring the reality behind AI capabilities and limitations.</div>
+                    <a href="https://medium.com/towards-artificial-intelligence/5-common-myths-about-ai-and-the-truth-behind-them-8291b1e0f235" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*FLYwFIn2UMfxY9Of6iSEMA.png" alt="Blockchain Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Generative AI vs. Agentic AI vs. AI Agents: What Everyone Needs to Know</div>
+                    <div class="content-card-desc">A comprehensive guide to understanding the distinctions between different AI paradigms and their practical applications in modern technology.</div>
+                    <a href="https://medium.com/towards-artificial-intelligence/generative-ai-vs-agentic-ai-vs-ai-agents-what-everyone-needs-to-know-dc42fd13e745" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*XbH5FxPDJi6VB1bUfe_zbQ.png" alt="Productivity Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Meet the Minds Behind Modern AI — 8 Types of Intelligent Agents Explained</div>
+                    <div class="content-card-desc">Exploring the different types of intelligent agents powering modern smart systems and their role in everyday automation.</div>
+                    <a href="https://medium.com/towards-artificial-intelligence/meet-the-minds-behind-modern-ai-8-types-of-intelligent-agents-explained-74c866d7ce39" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*HiilWndYBKafydeCSNjyrg.png" alt="Data Visualization Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Video Creation Made Easy: ChatGPT and RunwayML for Stunning Results</div>
+                    <div class="content-card-desc">A practical guide to leveraging AI tools for video creation, combining ChatGPT and RunwayML for professional content production.</div>
+                    <a href="https://medium.com/towards-artificial-intelligence/video-creation-made-easy-combining-chatgpt-and-runwayml-for-stunning-results-b764b2c01d2d" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Bxqzgta18tTvXS3Acd_a6w.png" alt="React Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">How to Use OpenAI Assistants API: A Comprehensive Tutorial</div>
+                    <div class="content-card-desc">Step-by-step tutorial on building advanced financial analysis applications using OpenAI's Assistants API with Streamlit for document processing and data analysis.</div>
+                    <a href="https://medium.com/@poojanvig.pv/how-to-use-openai-assistants-api-a-comprehensive-tutorial-36710b975473" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+                <div class="content-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*XqqwgysnwKny_UyzBokK5A.png" alt="AI Ethics Thumbnail" class="content-card-thumb" />
+                    <div class="content-card-title">Why Explainable AI Matters: A Deep Dive into XAI</div>
+                    <div class="content-card-desc">Artificial Intelligence (AI) and machine learning (ML) models have become ubiquitous, driving innovations across various sectors.</div>
+                    <a href="https://medium.com/@poojanvig.pv/why-explainable-ai-matters-a-deep-dive-into-xai-ddb9d75badd3" target="_blank" rel="noopener" class="content-card-btn">Read on Medium</a>
+                </div>
+            </div>
+        </section>
+        <!-- ─── Contact Info ─────────────────────────────────────────────── -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+            <p class="contact-intro">Let's connect! I'm always open to discussing new opportunities, collaborations, or sharing insights about AI and data science.</p>
+            <div class="contact-info-list">
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:poojanvig.pv@gmail.com">poojanvig.pv@gmail.com</a>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919167989179">+91 9167 9891 79</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
