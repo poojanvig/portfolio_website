@@ -1659,3 +1659,488 @@ body.dark .contact-info-item a:hover {
     font-size: 1rem;
   }
 }
+
+/* ==================== COMPREHENSIVE MOBILE RESPONSIVE STYLES ==================== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  /* Container */
+  .container {
+    padding: 20px 16px;
+    margin: 8px auto;
+    padding-bottom: 100px; /* Space for fixed nav */
+  }
+
+  /* Profile Header */
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .profile-info h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .profile-image {
+    order: -1; /* Move image above text */
+  }
+
+  .profile-image img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 1.75rem;
+    gap: 8px;
+  }
+
+  .section-title i {
+    font-size: 1.4rem;
+  }
+
+  /* About Section */
+  .about-section h2 {
+    font-size: 20px;
+    padding-left: 16px;
+  }
+
+  .about-section h2::before {
+    width: 3px;
+    height: 20px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+  }
+
+  /* Experience Section */
+  .experience-section h2 {
+    font-size: 1.75rem;
+    padding-left: 16px;
+  }
+
+  .experience-section h2::before {
+    width: 4px;
+    height: 32px;
+  }
+
+  .experience-item {
+    padding: 16px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .experience-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .title-details h3 {
+    font-size: 16px;
+  }
+
+  .role-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .company-info {
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
+
+  .experience-date {
+    font-size: 13px;
+    margin-left: 0;
+    white-space: normal;
+  }
+
+  .experience-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* First experience card */
+  #experience .experience-item:first-of-type {
+    padding-top: 44px;
+  }
+
+  #experience .experience-item:first-of-type::after {
+    left: 16px;
+    transform: none;
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  /* Skills Section */
+  .skills-section {
+    margin-top: 40px;
+  }
+
+  .skills-section h2 {
+    font-size: 1.75rem;
+    padding-left: 16px;
+  }
+
+  .skills-section h2::before {
+    width: 4px;
+    height: 32px;
+  }
+
+  .skills-category {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .skills-category h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .skills-list {
+    gap: 8px;
+  }
+
+  .skill-tag {
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+
+  .skill-tag i {
+    font-size: 11px;
+    margin-right: 4px;
+  }
+
+  /* Publications Section */
+  .publications-section-modern {
+    padding: 0 16px;
+  }
+
+  .publications-badge {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+  }
+
+  .publications-title {
+    font-size: 1.75rem;
+  }
+
+  .publications-desc {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  .publication-modern {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .publication-title-modern {
+    font-size: 1rem;
+  }
+
+  .publication-journal {
+    font-size: 0.85rem;
+  }
+
+  .publication-btn {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+  }
+
+  /* Awards Timeline */
+  .awards-timeline-section {
+    padding: 0 16px;
+  }
+
+  .awards-timeline {
+    gap: 20px;
+  }
+
+  .award-step {
+    gap: 12px;
+  }
+
+  .award-step-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .award-step-content {
+    padding: 14px 16px;
+    border-radius: 10px;
+  }
+
+  .award-step-title {
+    font-size: 1rem;
+  }
+
+  .award-step-date,
+  .award-step-meta {
+    font-size: 0.85rem;
+  }
+
+  .award-step-desc {
+    font-size: 0.9rem;
+  }
+
+  /* Organizations */
+  .organizations-profile-section {
+    padding: 0 16px;
+  }
+
+  .organization-profile-card {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .org-profile-sidebar {
+    width: 100%;
+    height: 4px;
+  }
+
+  .org-profile-main {
+    padding: 16px;
+  }
+
+  .org-profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .org-profile-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .org-profile-title {
+    font-size: 1rem;
+  }
+
+  .org-profile-role,
+  .org-profile-meta {
+    font-size: 0.85rem;
+  }
+
+  .org-profile-desc {
+    font-size: 0.9rem;
+  }
+
+  /* Content Creation */
+  .content-creation-section {
+    padding: 0 16px;
+  }
+
+  .content-creation-intro {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .content-creation-list {
+    gap: 16px;
+  }
+
+  .content-card {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .content-card-thumb {
+    height: 120px;
+  }
+
+  .content-card-title {
+    font-size: 0.95rem;
+    padding: 0 16px;
+    margin-top: 10px;
+  }
+
+  .content-card-desc {
+    font-size: 0.85rem;
+    padding: 0 16px;
+    margin-bottom: 14px;
+  }
+
+  .content-card-btn {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    margin: 0 16px 16px 16px;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 0 16px;
+  }
+
+  .contact-intro {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  .contact-info-item {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-info-item i {
+    font-size: 1rem;
+  }
+
+  /* Fixed Navigation */
+  .social-links {
+    bottom: 16px;
+    padding: 10px 16px;
+    border-radius: 30px;
+  }
+
+  .social-button {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+  }
+
+  .social-button i {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  .container {
+    padding: 16px 12px;
+    padding-bottom: 90px;
+  }
+
+  .profile-info h1 {
+    font-size: 26px;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  .profile-image img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 18px;
+  }
+
+  .experience-section h2,
+  .skills-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .title-details h3 {
+    font-size: 15px;
+  }
+
+  .experience-description {
+    font-size: 13px;
+  }
+
+  .skills-category h3 {
+    font-size: 14px;
+  }
+
+  .skill-tag {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .publications-title {
+    font-size: 1.5rem;
+  }
+
+  .award-step-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .content-card-thumb {
+    height: 100px;
+  }
+
+  .social-links {
+    bottom: 12px;
+    padding: 8px 12px;
+  }
+
+  .social-button {
+    width: 36px;
+    height: 36px;
+    margin: 0 3px;
+  }
+
+  .social-button i {
+    font-size: 14px;
+  }
+}
+
+/* Landscape orientation fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+  .social-links {
+    bottom: 8px;
+    padding: 6px 12px;
+  }
+
+  .social-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .container {
+    padding-bottom: 60px;
+  }
+}
+
+/* Ensure touch targets are large enough */
+@media (hover: none) and (pointer: coarse) {
+  .social-button,
+  .skill-tag,
+  .publication-btn,
+  .content-card-btn,
+  .contact-info-item {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
